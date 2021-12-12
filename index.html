@@ -1,0 +1,162 @@
+<!--Project Name: Photo Gallery-->
+<!--Using html, css, and bootstrape-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</head>
+
+<style type="text/css">
+    .item {
+        transition: .5s ease-in-out;
+    }
+
+    .item:hover {
+        filter: brightness(80%);
+    }
+body{
+    padding-top: 70px;
+}
+
+.jumbotron{
+    color: rgb(32, 32, 32);
+    background: #e4e7e7;
+}
+
+.navbar-inverse{
+    background: #2e659c;
+}
+
+footer{
+    height: 15vh;
+    position: absolute;
+    background-color: #2e659c;
+    width: 100%;
+    color: black;   
+}
+
+footer p{
+    position: absolute;
+    left: 35%;
+    bottom: 20px;
+}
+
+</style>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Image</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">SignUp</a></li>
+                </ul>
+            </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> The Photo Gallery</h1>
+            <p>A bunch of beutiful images that I didn't take.</p>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-lg-4 col-xs-6">
+            <a href="image/apple1.jpeg" class="fancybox" data-fancybox="gallery1">
+                <img src="image/apple1.jpeg" width="80%" style="padding-left: 50px;">
+            </a>
+        </div>
+
+        <div class="item col-lg-4 col-xs-6">
+            <a href="image/orange2.jpeg" class="fancybox" data-fancybox="gallery1">
+                <img src="image/orange2.jpeg" width="80%">
+            </a>
+        </div>            
+
+        <div class="item col-lg-4 col-xs-6">
+            <a href="image/apple3.jpeg" class="fancybox" data-fancybox="gallery1">
+                <img src="image/apple3.jpeg"  width="80%"  style="padding-left: 50px; padding-top: 20px;">
+            </a>
+        </div>
+
+        <div class="item col-lg-4 col-xs-6">
+            <a href="image/strawberry2.jpeg" class="fancybox" data-fancybox="gallery1">
+                <img src="image/strawberry2.jpeg" width="90%"  style="padding-right: 50px; padding-top: 20px;">
+            </a>
+        </div>
+
+        <div class="item col-lg-4 col-xs-6">
+            <a href="image/orange1.jpeg" class="fancybox" data-fancybox="gallery1">
+                <img src="image/orange1.jpeg"  width="80%"  style="padding-left: 50px; padding-top: 20px;">
+            </a>
+        </div>
+
+    
+        <div class="item col-lg-4 col-xs-6">
+            <a href="image/grapes1.jpeg" class="fancybox" data-fancybox="gallery1">
+                <img src="image/grapes1.jpeg" width="80%"  style="padding-top: 20px;">
+            </a>
+        </div>
+
+        <div class="item col-lg-4 col-xs-6">
+            <a href="image/apple2.jpeg" class="fancybox" data-fancybox="gallery1">        
+                    <img src="image/apple2.jpeg"  width="80%"  style="padding-left: 50px; padding-top: 20px;">  
+            </a>
+        </div>
+
+       
+
+        <div class="item col-lg-4 col-xs-6">
+            <a href="image/strawberry1.jpeg" class="fancybox" data-fancybox="gallery1">
+                <img src="image/strawberry1.jpeg" width="80%"  style="padding-top: 20px;">
+            </a>
+        </div>
+
+        <div class="item col-lg-4 col-xs-6">
+            <a href="image/fruits.jpeg" class="fancybox" data-fancybox="gallery1">
+                <img src="image/fruits.jpeg" width="80%"  style="padding-top: 20px; padding-left: 0px;" >
+            </a>
+        </div>
+
+        <div class="item col-lg-4 col-xs-6">
+            <a href="image/grapes2.jpeg" class="fancybox" data-fancybox="gallery1">
+                <img src="image/grapes2.jpeg"  width="80%" style="padding-left: 50px; padding-bottom: 180px; padding-top: 20px;">
+            </a>
+        </div>      
+
+    </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" y></script>
+    
+    <footer class="background">
+        <p class="text-footer">Copyright &copy; 2021 Naved - All rights reserved </p>
+    </footer>
+
+</body>
+
+</html>
